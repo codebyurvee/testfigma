@@ -1,0 +1,151 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+/* Main container matching Figma frame dimensions */
+.container {
+    width: 685px;
+    height: 492px;
+    position: relative;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Background layer */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+    z-index: 1;
+}
+
+/* Left side - Image section */
+.image-section {
+    width: 342.5px;
+    height: 492px;
+    position: relative;
+    z-index: 2;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/background-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Right side - Content section */
+.content-section {
+    width: 342.5px;
+    height: 492px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text group positioning */
+.text-group {
+    width: 278px;
+    height: 202px;
+    position: relative;
+    top: -51px; /* Adjust to match Figma positioning (145px from top of 492px container) */
+}
+
+/* Heading styles matching Figma specifications */
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -1.9%;
+    color: #000000;
+    text-align: left;
+    width: 276px;
+    height: 88px;
+    margin: 0;
+    margin-bottom: 18px; /* Space between heading and description */
+}
+
+/* Description styles matching Figma specifications */
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857142857142;
+    letter-spacing: -0.6%;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    width: 278px;
+    height: 96px;
+    margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 685px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        min-height: 492px;
+        flex-direction: column;
+    }
+    
+    .image-section {
+        width: 100%;
+        height: 50vh;
+        min-height: 246px;
+    }
+    
+    .content-section {
+        width: 100%;
+        height: auto;
+        min-height: 246px;
+        padding: 20px;
+    }
+    
+    .text-group {
+        width: 100%;
+        max-width: 278px;
+        height: auto;
+        top: 0;
+        margin: 0 auto;
+    }
+    
+    .heading {
+        width: 100%;
+        height: auto;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    
+    .description {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 28px;
+    }
+    
+    .description {
+        font-size: 13px;
+    }
+}
