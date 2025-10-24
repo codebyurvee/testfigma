@@ -1,4 +1,4 @@
-# Git Setup Guide for TestFigma Project
+# Git Setup Guide for Landing Page Project
 
 ## Step 1: Install Git for Windows
 
@@ -10,7 +10,7 @@
 ## Step 2: Create GitHub Repository
 
 1. Go to https://github.com/new
-2. Repository name: `testfigma`
+2. Repository name: `landing-page`
 3. Description: "Figma landing page implementation with pixel-perfect design"
 4. Choose Public or Private
 5. **DO NOT** check "Add a README file", "Add .gitignore", or "Choose a license"
@@ -41,7 +41,7 @@ git commit -m "Initial commit: Figma landing page implementation
 - Clean HTML structure and CSS styling"
 
 # Add remote repository (replace with your actual repository URL)
-git remote add origin https://github.com/codebyurvee/testfigma.git
+git remote add origin https://github.com/codebyurvee/landing-page.git
 
 # Push to GitHub
 git push -u origin main
@@ -49,7 +49,7 @@ git push -u origin main
 
 ## Step 4: Verify Upload
 
-1. Go to https://github.com/codebyurvee/testfigma
+1. Go to https://github.com/codebyurvee/landing-page
 2. Verify all files are uploaded correctly
 3. Check that the README.md displays properly
 

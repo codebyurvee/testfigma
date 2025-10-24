@@ -1,5 +1,5 @@
 @echo off
-echo Setting up Git repository for testfigma project...
+echo Setting up Git repository for landing-page project...
 
 REM Configure Git user
 git config --global user.name "codebyurvee"
@@ -24,12 +24,12 @@ REM Add remote repository (you'll need to create this on GitHub first)
 echo.
 echo IMPORTANT: Before running the next command, please:
 echo 1. Go to https://github.com/new
-echo 2. Create a new repository named 'testfigma'
+echo 2. Create a new repository named 'landing-page'
 echo 3. Make it public or private as desired
 echo 4. Do NOT initialize with README, .gitignore, or license
 echo 5. Copy the repository URL and replace the URL in the next command
 echo.
-echo Then run: git remote add origin https://github.com/codebyurvee/testfigma.git
+echo Then run: git remote add origin https://github.com/codebyurvee/landing-page.git
 echo And: git push -u origin main
 
 pause
